@@ -11,7 +11,7 @@ defmodule MediumGraphqlApiWeb.Router do
     forward("/graphql", Absinthe.Plug, schema: MediumGraphqlApiWeb.Schema)
 
     if Mix.env() == :dev do
-      forward("/graphql", Absinthe.Plug.GraphiQL, schema: MediumGraphqlApiWeb.Schema)
+      forward("/graphiql", Absinthe.Plug.GraphiQL, schema: MediumGraphqlApiWeb.Schema)
     end
   end
 end
