@@ -1,4 +1,4 @@
-defmodule MediumGraphqlApiWeb.Schema.Types.Usertype do
+defmodule MediumGraphqlApiWeb.Schema.Types.UserType do
   use Absinthe.Schema.Notation
 
   object :user_type do # What to show
