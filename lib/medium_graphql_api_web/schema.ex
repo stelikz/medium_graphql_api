@@ -11,7 +11,7 @@ query do
   @desc "Get a list of all users"
   field :users, list_of(:user_type) do
     # Resolver
-    middleware(Middleware.Authorization, "admin")
+    middleware(Middleware.Authorization, :any)
     resolve(&Resolvers.UserResolver.users/3)
   end
 end
